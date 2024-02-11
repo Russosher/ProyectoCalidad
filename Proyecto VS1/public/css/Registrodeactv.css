@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    background:
+	 url(../images/abstract-dark-purple-background-overlap-layer-on-dark-space-for-background-design-exclusive-wallpaper-design-for-poster-brochure-presentation-website-etc-vector.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.capa {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/* Estilos para el encabezado */
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu,
+.logo {
+    float: left;
+    line-height: 100px;
+}
+
+.container .btn-menu label {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    float: left;
+}
+
+.logo h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.logo1 img {
+
+    width: 40px; 
+    height: auto; 
+}
+.container .menu {
+    float: right;
+    line-height: 100px;
+}
+
+.container .menu a {
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.container .menu a:hover {
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+
+/* Menú lateral */
+#btn-menu {
+    display: none;
+}
+
+.container-menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+}
+
+nav ul li {
+    border-bottom: 1px solid;
+    position: relative;
+}
+
+/* Submenús desplegables */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #1f1f1f;
+    width: 250px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul a {
+    padding: 10px;
+    border-left: 5px solid transparent;
+}
+
+nav ul ul a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #333;
+}
+
+.perfil img {
+  
+    width: 30px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+
+.data-table {
+    width: 500%;
+    border-collapse: collapse;
+    margin: 160px auto ;
+    margin-left: 10px;
+    position: relative;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 1px;
+    width:  auto;
+    text-align: center;
+    margin-right:  10px;
+}
+
+.data-table th {
+    background-color: #0ac20aab;
+    margin: 60%;
+}
+
+.CCT{
+    height: 10px;
+}
+#data-tablecontenedor{
+    display: none;
+    position: relative;
+	margin: 10%, auto;
+	width: 40px;
+	left: 50px;
+    top: auto;
+	background-color: #f2f2f2af;
+    margin-bottom: 400px; 
+}
+
+#data-tablecontenedor2{
+    display: none;
+    position: relative;
+	margin: 10%, auto;
+	width: 40px;
+	left: 50px;
+    top: auto;
+	background-color: #f2f2f2af;
+    margin-bottom: 400px; 
+}
+
+ .barra-registro{
+    background-color: rgb(153, 173, 166);
+    margin-top: 10%;
+}
+
+button{
+    background-color: #0ca06f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 0.2%;
+    border: black;
+    padding-left: 10%;
+
+  }
+  
+  button:hover {
+    background-color: #0a4733;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 0.2%;
+    border: black;
+    padding-left: 10%;
+
+  }
+  
+  .pagination {
+      text-align: center;
+   
+      background-color: #1f1f1f;
+
+
+
+  }
+  
+  #prevPage,
+  #nextPage {
+      background-color: #161f1c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 5px;
+  }
+  
+  #prevPage:hover,
+  #nextPage:hover {
+      background-color: #0a4733;
+  }
+  
+  #currentPage {
+      display: inline-block;
+      margin: 0 5px;
+      color: #fff;
+      font-size: 16px;
+  }

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyecto Calidad</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/Registrodeactv.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>BVC</h1>
+            </div>
+            <nav class="menu" id="nav1">
+                <a href="#">Inicio</a>
+                <a href="/html/perfil.html">Perfil</a>
+                <a href="/html/sesion.html">Salir</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    <!-- --------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Gestion de actividades</a>
+                        <ul>
+                            <li><a href="../html/Registrodeactv.html">Registro de actividades</a></li>
+                            <li><a href="../html/listadeactiv.html">Lista de actividades</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Registro generales</a>
+                        <ul>
+                            <li><a href="../html/RG-analista.html">Analistas</a></li>
+                            <li><a href="../html/Reg-proyectos.html">Proyectos</a></li>
+                            <li><a href="../html/RG-desarrollador.html">Desarrolladores</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Reportes</a>
+                        <ul>
+                            <li><a href="/html/Rep-proyecto.html">Proyectos</a></li>
+                            <li><a href="/html/REP-analista.html">Analistas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+        <!-- sub/barra-->
+    
+      <div class="barra-registro">
+        <!-- Contenido de tu página va aquí -->
+        <button onclick="toggleSidebar()" id="Botonregistrar">Registrar</button>
+        <button onclick="toggleSidebar()" id="BotonModificar">Consultar</button>
+      </div>
+
+      
+     <!-- Tabla de registro de actividades -->
+      <table class="data-table" id="data-tablecontenedor">
+        
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Avatar</th>
+                <th>NRO REQ.</th>
+                <th>DESCRIPCION</th>
+                <th>INICIO</th>
+                <th>FECHA CONCLUSION</th>
+                <th>Status</th>
+                <th>DESARROLLADOR</th>
+                <th>CCT</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><select name="1" id=""></select></select></td>
+                <td>
+                    <img src="/images/avatar/1.jpg" alt="Avatar">
+                </td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id="">
+                    <option>En Calidad</option>
+                    <option>Con incidencia</option>
+                </select></td>
+                <td><select name="" id="">            
+                    <option>David Zacarias</option>
+                    <option>Heckel Hermoso</option></select></td>
+                <td><input type="text"></td>
+            </tr>
+        </tbody>
+      </table>
+
+    
+       <!-- Tabla -->
+    <table class="data-table" id="data-tablecontenedor2">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Avatar</th>
+                <th>NRO REQ.</th>
+                <th>DESCRIPCION</th>
+                <th>INICIO</th>
+                <th>FECHA CONCLUSION</th>
+                <th>Status</th>
+                <th>DESARROLLADOR</th>
+                <th>CCT</th>
+                <th>ACCION</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><select name="" id="" >
+                    <option>1</option>
+                    <option>2</option>
+                </select></td>
+                <td>
+                    <img src="/images/avatar/1.jpg" alt="Avatar">
+                </td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id="">                
+                        <option>En Calidad</option>
+                    <option>Con incidencia</option>
+                </select>
+                
+</td>
+                <td><select name="" id="">              
+                    <option>David Zacarias</option>
+                    <option>Heckel Hermoso</option>
+                </select></td>
+                <td><input type="text"></td>
+                <td><button type="button" class="btn btn-danger">Modificar</button> </td>
+            </tr>
+            <tr>
+                <td><select name="" id=""></select></td>
+                <td>
+                    <img src="/images/avatar/2.jpg" alt="Avatar">
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id=""></select></td>
+                <td><select name="" id=""></select></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><select name="" id=""></select></td>
+                <td>
+                    <img src="/images/avatar/3.jpg" alt="Avatar">
+                </td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id=""></select></td>
+                <td><select name="" id=""></select></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><select name="" id=""></select></td>
+                <td>
+                    <img src="/images/avatar/4.jpg" alt="Avatar">
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id=""></select></td>
+                <td><select name="" id=""></select></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><select name="" id=""></select></td>
+                <td>
+                    <img src="/images/avatar/4.jpg" alt="Avatar">
+                </td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id=""></select></td>
+                <td><select name="" id=""></select></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><select name="" id=""></select></td>
+                <td>
+                    <img src="/images/avatar/4.jpg" alt="Avatar">
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id=""></select></td>
+                <td><select name="" id=""></select></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><select name="" id=""></select></td>
+                <td>
+                    <img src="/images/avatar/4.jpg" alt="Avatar">
+                </td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id=""></select></td>
+                <td><select name="" id=""></select></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><select name="" id=""></select></td>
+                <td>
+                    <img src="/images/avatar/4.jpg" alt="Avatar">
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id=""></select></td>
+                <td><select name="" id=""></select></td>
+                <td><input type="text"></td>
+
+            </tr>
+            <tr>
+                <td><select name="" id="" >
+                    <option>1</option>
+                    <option>2</option>
+                </select></td>
+                <td>
+                    <img src="/images/avatar/4.jpg" alt="Avatar">
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id=""></select></td>
+                <td><select name="" id=""></select></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><select name="" id=""></select></td>
+                <td>
+                    <img src="/images/avatar/4.jpg" alt="Avatar">
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><select name="" id=""></select></td>
+                <td><select name="" id=""></select></td>
+                <td><input type="text"></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <div class="pagination" id="pagination-container">
+        <button id="prevPage" onclick="prevPage()">Anterior</button>
+        <span id="currentPage">Página 1</span>
+        <button id="nextPage" onclick="nextPage()">Siguiente</button>
+    </div>
+
+<script src="/Proyecto VS1/public/js/rgdeactv.js"></script>
+</body>
+</html>
