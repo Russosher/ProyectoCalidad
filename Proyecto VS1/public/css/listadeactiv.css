@@ -245,7 +245,7 @@ background-color: #0ca06f;
 box-sizing: border-box;
 }
 
-#data-tablecontenedor, #data-tablecontenedor3{
+#data-tablecontenedor{
     display: none;
     position: relative;
 	margin: 40%, auto;
@@ -256,10 +256,9 @@ box-sizing: border-box;
 	background-color: #6e5050af;
     box-sizing: border-box;
 }
-
-
-
-
+#data-tablecontenedor2{
+    display: none;
+}
 
  .barra-registro{
     background-color: rgb(153, 173, 166);

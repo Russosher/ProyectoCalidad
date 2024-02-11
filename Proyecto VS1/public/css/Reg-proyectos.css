@@ -241,6 +241,9 @@ nav ul ul a:hover {
     top: auto;
 	background-color: #f2f2f2af;
 }
+#data-tablecontenedor3{
+    display: none;
+}
 
 
  .barra-registro{

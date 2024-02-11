@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proyecto Calidad</title>
-    <link rel="stylesheet" type="text/css" href="../css/RG-desarrollador.css">
+    <link rel="stylesheet" type="text/css" href="../css/listadeactiv.css">
     <link rel="stylesheet" href="/Proyecto VS1/public/css/css/bootstrap.css">
 </head>
 <body>
@@ -71,29 +71,20 @@
             </form>
         </div>
     </div>
-
-        <input class="Buscador" type="date"> 
     </td>
     </div>
-    <button onclick="toggleSidebar()" id="Botonregistrar">Registrar</button>
-    <button onclick="toggleSidebar()" id="BotonConsultar">Consultar</button>
       </div>
     </div> 
     <br>      
     <form action="registro-desarrollador" class="data-table" id="data-tablecontenedor">
         <div class="row">
             <div class="col">
-                <select type="text" class="form-control" placeholder="Nombre" aria-label="First name"> 
+                <select type="text" class="form-select" placeholder="Nombre" aria-label="First name">
+                    <option selected>Seleccione un analista</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
-                    <option value="3">Three</option>/select>
+                    <option value="3">Three</option> </select>
                 
-            </div>
-            <div class="col">
-                <select type="text" class="form-control"  aria-label="First name">
-                    <option value="3">Three</option></select>
-
-                </select>
             </div>
         </div>
 
@@ -130,7 +121,7 @@
                 </select>
             </div>
             <div >
-                <input type="text" class="form-control" placeholder="descripcion" aria-label="Cargo">
+                <input type="text" class="form-control" placeholder="Observaciones" aria-label="Cargo">
             </div>
         </div>
   
@@ -166,8 +157,8 @@
     <table class="table table-success table-striped table-responsive" id="data-tablecontenedor2">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Avatar</th>
+            <th scope="col">ID</th>
+            <th scope="col">ANALISTA</th>
             <th scope="col">NRO REQ.</th>
             <th scope="col">DESCRIPCION</th>
             <th scope="col">INICIO</th>
@@ -183,7 +174,7 @@
           <tr>
             <th scope="row">1</th>
             <td>
-                <img src="/images/avatar/1.jpg" alt="Avatar">
+                <img src="/Proyecto VS1/public/images/avatar/1.jpg" alt="Avatar">
             </td>
             <td>25741></td>
             <td>cambios en VOL</td>
@@ -198,7 +189,7 @@
           <tr>
             <th scope="row">2</th>
             <td>
-                <img src="/images/avatar/1.jpg" alt="Avatar">
+                <img src="/Proyecto VS1/public/images/avatar/2.jpg" alt="Avatar">
             </td>
             <td>25741></td>
             <td>cambios en VOL</td>
@@ -213,7 +204,7 @@
           <tr>
             <th scope="row">3</th>
           <td>
-            <img src="/images/avatar/1.jpg" alt="Avatar">
+            <img src="/Proyecto VS1/public/images/avatar/3.jpg" alt="Avatar">
         </td>
         <td>25741></td>
         <td>cambios en VOL</td>
@@ -228,6 +219,6 @@
         </tbody>
       </table>
     
-<script src="/Proyecto VS1/public/js/rgdeactv.js"></script>
+<script src="/Proyecto VS1/public/js/listadeactiv.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proyecto Calidad</title>
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/css/bootstrap.css">
     <link rel="stylesheet" href="../css/Registrodeactv.css">
 </head>
 <body>
@@ -63,218 +63,85 @@
       <div class="barra-registro">
         <!-- Contenido de tu página va aquí -->
         <button onclick="toggleSidebar()" id="Botonregistrar">Registrar</button>
-        <button onclick="toggleSidebar()" id="BotonModificar">Consultar</button>
       </div>
 
       
-     <!-- Tabla de registro de actividades -->
-      <table class="data-table" id="data-tablecontenedor">
-        
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Avatar</th>
-                <th>NRO REQ.</th>
-                <th>DESCRIPCION</th>
-                <th>INICIO</th>
-                <th>FECHA CONCLUSION</th>
-                <th>Status</th>
-                <th>DESARROLLADOR</th>
-                <th>CCT</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><select name="1" id=""></select></select></td>
-                <td>
-                    <img src="/images/avatar/1.jpg" alt="Avatar">
-                </td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id="">
-                    <option>En Calidad</option>
-                    <option>Con incidencia</option>
-                </select></td>
-                <td><select name="" id="">            
-                    <option>David Zacarias</option>
-                    <option>Heckel Hermoso</option></select></td>
-                <td><input type="text"></td>
-            </tr>
-        </tbody>
-      </table>
-
+      <br>      
+      <form action="" class="data-table" id="data-tablecontenedor">
+          <div class="row">
+              <div class="col">
+                  <select type="text" class="form-select" placeholder="Nombre" aria-label="First name">
+                      <option selected>Seleccione un analista</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option> </select>
+                  
+              </div>
+          </div>
+  
+          <div class="row">
+          <div class="col">
+              <input type="text" class="form-control" placeholder="DESCRIPCION" aria-label="Cargo">
+          </div>
+        <div>
+          <input type="date" class="form-control" placeholder="EMAIL" aria-label="Cargo">
+          </div>
+      </div>
+      <div class="row">
+      <div class="col">
+                  <input type="date" class="form-control" placeholder="EMAIL" aria-label="Cargo">
+              </div>
+  
+                  <div>
+                      <select class="form-select" aria-label="Default select example">
+                          <option selected>STATUS</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                      </select>
+                  </div>
+              </div>
+  
+              <div class="row"> 
+              <div class="col">
+                  <select class="form-select" aria-label="Default select example">
+                      <option selected class="select-disable">DESARROLLADOR</option>
+                      <option value="1">David</option>
+                      <option value="2">Joe</option>
+                      <option value="3">Albert</option>
+                  </select>
+              </div>
+              <div >
+                  <input type="text" class="form-control" placeholder="Observaciones" aria-label="Cargo">
+              </div>
+          </div>
     
-       <!-- Tabla -->
-    <table class="data-table" id="data-tablecontenedor2">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Avatar</th>
-                <th>NRO REQ.</th>
-                <th>DESCRIPCION</th>
-                <th>INICIO</th>
-                <th>FECHA CONCLUSION</th>
-                <th>Status</th>
-                <th>DESARROLLADOR</th>
-                <th>CCT</th>
-                <th>ACCION</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><select name="" id="" >
-                    <option>1</option>
-                    <option>2</option>
-                </select></td>
-                <td>
-                    <img src="/images/avatar/1.jpg" alt="Avatar">
-                </td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id="">                
-                        <option>En Calidad</option>
-                    <option>Con incidencia</option>
-                </select>
-                
-</td>
-                <td><select name="" id="">              
-                    <option>David Zacarias</option>
-                    <option>Heckel Hermoso</option>
-                </select></td>
-                <td><input type="text"></td>
-                <td><button type="button" class="btn btn-danger">Modificar</button> </td>
-            </tr>
-            <tr>
-                <td><select name="" id=""></select></td>
-                <td>
-                    <img src="/images/avatar/2.jpg" alt="Avatar">
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id=""></select></td>
-                <td><select name="" id=""></select></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td><select name="" id=""></select></td>
-                <td>
-                    <img src="/images/avatar/3.jpg" alt="Avatar">
-                </td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id=""></select></td>
-                <td><select name="" id=""></select></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td><select name="" id=""></select></td>
-                <td>
-                    <img src="/images/avatar/4.jpg" alt="Avatar">
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id=""></select></td>
-                <td><select name="" id=""></select></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td><select name="" id=""></select></td>
-                <td>
-                    <img src="/images/avatar/4.jpg" alt="Avatar">
-                </td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id=""></select></td>
-                <td><select name="" id=""></select></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td><select name="" id=""></select></td>
-                <td>
-                    <img src="/images/avatar/4.jpg" alt="Avatar">
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id=""></select></td>
-                <td><select name="" id=""></select></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td><select name="" id=""></select></td>
-                <td>
-                    <img src="/images/avatar/4.jpg" alt="Avatar">
-                </td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id=""></select></td>
-                <td><select name="" id=""></select></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td><select name="" id=""></select></td>
-                <td>
-                    <img src="/images/avatar/4.jpg" alt="Avatar">
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id=""></select></td>
-                <td><select name="" id=""></select></td>
-                <td><input type="text"></td>
-
-            </tr>
-            <tr>
-                <td><select name="" id="" >
-                    <option>1</option>
-                    <option>2</option>
-                </select></td>
-                <td>
-                    <img src="/images/avatar/4.jpg" alt="Avatar">
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id=""></select></td>
-                <td><select name="" id=""></select></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td><select name="" id=""></select></td>
-                <td>
-                    <img src="/images/avatar/4.jpg" alt="Avatar">
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="date" name="" id=""></td>
-                <td><input type="date"></td>
-                <td><select name="" id=""></select></td>
-                <td><select name="" id=""></select></td>
-                <td><input type="text"></td>
-            </tr>
-
-        </tbody>
-
-    </table>
-
-    <div class="pagination" id="pagination-container">
-        <button id="prevPage" onclick="prevPage()">Anterior</button>
-        <span id="currentPage">Página 1</span>
-        <button id="nextPage" onclick="nextPage()">Siguiente</button>
+              <!-- Button trigger modal -->
+              <div class="col">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="incluir">INCLUIR</button>
+              </div>
+        
+      </form>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">DATOS GUARDADOS EXITOSAMENTE</button>
+          </div>
+        </div>
+      </div>
     </div>
+      </div>
+      </form>
 
 <script src="/Proyecto VS1/public/js/rgdeactv.js"></script>
 </body>

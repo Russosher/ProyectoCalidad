@@ -63,9 +63,9 @@ body {
 }
 
 .logo1 img {
-
-    width: 40px; 
-    height: auto; 
+    /* Estilos para la imagen del logo */
+    width: 40px; /* Ajusta según tus necesidades */
+    height: auto; /* Ajusta según tus necesidades */
 }
 .container .menu {
     float: right;
@@ -132,6 +132,7 @@ body {
 
 .cont-menu nav a {
     display: block;
+
     text-decoration: none;
     padding: 20px;
     color: #c7c7c7;
@@ -166,6 +167,7 @@ nav ul a {
     padding: 6px 0;
 }
 
+
 nav ul li {
     border-bottom: 1px solid;
     position: relative;
@@ -196,57 +198,59 @@ nav ul ul a:hover {
 }
 
 .perfil img {
-  
     width: 30px; 
     height: auto; 
-    margin-right: 10px; 
+    margin-right: 10px; /* Espaciado entre la imagen y el enlace de perfil */
 }
 
+form{
+display: flex;
+width: 100%;
+text-align: center;
+height: 100%;;
+box-sizing: border-box;
 
-.data-table {
-    width: 500%;
-    border-collapse: collapse;
-    margin: 160px auto ;
-    margin-left: 10px;
-    position: relative;
 }
 
-.data-table th, .data-table td {
-    border: 1px solid #ddd;
-    padding: 1px;
-    width:  auto;
+.col{
+    padding: 2%;
+    width: 100%;
     text-align: center;
-    margin-right:  10px;
 }
 
-.data-table th {
-    background-color: #0ac20aab;
-    margin: 60%;
+.row{
+    padding: 2%;
+    width: 100%;
+    text-align: center;
 }
 
-.CCT{
-    height: 10px;
+.form-control{
+    padding: 0%;
+    width: 150%;
+    height: 40px;
+    left: auto;
+box-sizing: border-box;
+border: 10%
 }
+
+.form-select{
+    padding: 1%;
+    width: 150%;
+
+    left: auto;
+box-sizing: border-box;
+}
+
 #data-tablecontenedor{
     display: none;
     position: relative;
-	margin: 10%, auto;
-	width: 40px;
-	left: 50px;
+	margin: 40%, auto;
+	width: 400px;
+	left: 500px;
     top: auto;
-	background-color: #f2f2f2af;
-    margin-bottom: 400px; 
-}
-
-#data-tablecontenedor2{
-    display: none;
-    position: relative;
-	margin: 10%, auto;
-	width: 40px;
-	left: 50px;
-    top: auto;
-	background-color: #f2f2f2af;
-    margin-bottom: 400px; 
+    height: 1px;
+	background-color: #6e5050af;
+    box-sizing: border-box;
 }
 
  .barra-registro{
@@ -264,6 +268,35 @@ button{
     margin-right: 0.2%;
     border: black;
     padding-left: 10%;
+  }
+  
+  #incluir{
+
+    background-color: #0ca06f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 0.2%;
+    border: black;
+    padding-left: 10%;
+    text-align: center;
+
+  }
+
+
+  #incluir:hover {
+    background-color: #0a4733;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 0.2%;
+    border: black;
+    padding-left: 10%;
+    text-align: center;
 
   }
   
@@ -277,37 +310,6 @@ button{
     margin-right: 0.2%;
     border: black;
     padding-left: 10%;
+    text-align: center;
 
-  }
-  
-  .pagination {
-      text-align: center;
-   
-      background-color: #1f1f1f;
-
-
-
-  }
-  
-  #prevPage,
-  #nextPage {
-      background-color: #161f1c;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-right: 5px;
-  }
-  
-  #prevPage:hover,
-  #nextPage:hover {
-      background-color: #0a4733;
-  }
-  
-  #currentPage {
-      display: inline-block;
-      margin: 0 5px;
-      color: #fff;
-      font-size: 16px;
   }
